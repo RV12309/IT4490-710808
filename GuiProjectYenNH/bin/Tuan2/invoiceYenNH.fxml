@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="90.0" fitWidth="127.0" layoutX="6.0" layoutY="16.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/248360897_3013779965550006_8329201397745446692_n.png" />
+         </image></ImageView>
+      <AnchorPane layoutX="805.0" layoutY="26.0" prefHeight="416.0" prefWidth="528.0" style="-fx-border-color: orange;" />
+      <GridPane layoutX="572.0" layoutY="486.0" prefHeight="169.0" prefWidth="459.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.666748046875" minWidth="10.0" prefWidth="211.666748046875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.6666259765625" minWidth="10.0" prefWidth="132.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="187.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="60.0" minHeight="0.0" prefHeight="36.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="71.33333333333334" minHeight="0.0" prefHeight="50.00002034505208" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="45.333312988281236" minHeight="10.0" prefHeight="45.333312988281236" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Subtotal">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label text="Shipping Fees" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font></Label>
+            <Label text="Total" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label text="VND" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label text="VND" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label text="VND" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label prefHeight="35.0" prefWidth="157.0" text="100000" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label prefHeight="35.0" prefWidth="82.0" text="50000" textAlignment="RIGHT" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label prefHeight="35.0" prefWidth="159.0" text="150000" textAlignment="JUSTIFY" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="20.0" layoutY="134.0" prefHeight="345.0" prefWidth="602.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.99993896484375" minWidth="10.0" prefWidth="331.99993896484375" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="308.0" minWidth="10.0" prefWidth="204.00006103515625" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="72.66668701171875" minHeight="10.0" prefHeight="72.66668701171875" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="66.66664632161458" minHeight="10.0" prefHeight="66.66664632161458" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="65.33333333333334" minHeight="10.0" prefHeight="61.333333333333314" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="122.0" minHeight="10.0" prefHeight="72.66666666666666" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="108.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Name">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font></Label>
+            <Label text="Phone" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font></Label>
+            <Label text="City" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font></Label>
+            <Label text="Address" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font></Label>
+            <Label prefHeight="101.0" prefWidth="152.0" text="Shipping instruction" wrapText="true" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Full name" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+            <Label text="091234578" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Hanoi" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+            <Label text="address" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+            <Label prefHeight="35.0" prefWidth="249.0" text="Shipping instruction" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Button layoutX="639.0" layoutY="660.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="235.0" style="-fx-background-color: red;" text="Confirm order" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Label layoutX="136.0" layoutY="38.0" text="INVOICE" textFill="#4384a3">
+         <font>
+            <Font name="Segoe UI Bold" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

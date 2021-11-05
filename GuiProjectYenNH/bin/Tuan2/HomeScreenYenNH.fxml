@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.1921140939597315" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="1364.0" style="-fx-background-color: #FFE6E6; -fx-border-color: #FE9C9C;">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="72.0" layoutX="19.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/248360897_3013779965550006_8329201397745446692_n.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="345.0" layoutY="51.0" prefHeight="41.0" prefWidth="461.0" />
+            <ImageView fitHeight="72.0" fitWidth="85.0" layoutX="1165.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/250814641_635154024148870_7109410282534025753_n.png" />
+               </image>
+            </ImageView>
+            <SplitMenuButton layoutX="845.0" layoutY="50.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="158.0" text="search">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </SplitMenuButton>
+         </children>
+         <effect>
+            <ColorAdjust />
+         </effect></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="768.0" prefWidth="1366.0">
+         <children>
+            <GridPane layoutX="24.0" layoutY="16.0" prefHeight="557.0" prefWidth="1309.0" style="-fx-border-color: pink;">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: pink;">
+                     <children>
+                        <HBox prefHeight="190.0" prefWidth="325.0" style="-fx-border-color: blue;">
+                           <children>
+                              <ImageView fitHeight="161.0" fitWidth="162.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/248671495_315346063358944_7895732796449674514_n.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="-1.0" text="Book1">
+                                       <font>
+                                          <Font name="Segoe UI" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="148.0" prefWidth="131.0" style="-fx-border-color: green;">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="5.0" prefHeight="51.0" prefWidth="114.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.77783203125" minWidth="10.0" prefWidth="66.77783203125" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.88885498046875" minWidth="10.0" prefWidth="47.22216796875" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints maxHeight="39.444427490234375" minHeight="10.0" prefHeight="31.000030517578125" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="37.666636149088546" minHeight="10.0" prefHeight="37.666636149088546" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label text="Avail" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Price">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="24" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="69" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Spinner editable="true" layoutX="14.0" layoutY="60.0" prefHeight="31.0" prefWidth="99.0" />
+                                          <Button layoutX="17.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" text="Add to cart">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="167.0" prefWidth="325.0" style="-fx-border-color: blue;">
+                           <children>
+                              <ImageView fitHeight="169.0" fitWidth="152.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/248795424_859698658056984_5171316904665807901_n.jpg" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="-1.0" text="CD1">
+                                       <font>
+                                          <Font name="Segoe UI" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="148.0" prefWidth="131.0" style="-fx-border-color: green;">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="5.0" prefHeight="51.0" prefWidth="114.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.77783203125" minWidth="10.0" prefWidth="66.77783203125" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.88885498046875" minWidth="10.0" prefWidth="47.22216796875" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="39.444427490234375" minHeight="10.0" prefHeight="31.000030517578125" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="37.666636149088546" minHeight="10.0" prefHeight="37.666636149088546" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Avail" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Price">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="976" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="34" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Spinner editable="true" layoutX="14.0" layoutY="60.0" prefHeight="31.0" prefWidth="99.0" />
+                                          <Button layoutX="17.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" text="Add to cart">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="197.0" prefWidth="325.0" style="-fx-border-color: blue;">
+                           <children>
+                              <ImageView fitHeight="197.0" fitWidth="159.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/249839700_486346935831573_3502333854150406964_n.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="-1.0" text="DVD1">
+                                       <font>
+                                          <Font name="Segoe UI" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="148.0" prefWidth="131.0" style="-fx-border-color: green;">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="5.0" prefHeight="51.0" prefWidth="114.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.77783203125" minWidth="10.0" prefWidth="66.77783203125" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.88885498046875" minWidth="10.0" prefWidth="47.22216796875" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="39.444427490234375" minHeight="10.0" prefHeight="31.000030517578125" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="37.666636149088546" minHeight="10.0" prefHeight="37.666636149088546" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Avail" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Price">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="634" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="80" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Spinner editable="true" layoutX="14.0" layoutY="60.0" prefHeight="31.0" prefWidth="99.0" />
+                                          <Button layoutX="17.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" text="Add to cart">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: pink;" GridPane.columnIndex="1">
+                     <children>
+                        <HBox prefHeight="190.0" prefWidth="325.0" style="-fx-border-color: blue;">
+                           <children>
+                              <ImageView fitHeight="178.0" fitWidth="150.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/249349828_4389293871191559_8720795176064168062_n.jpg" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="-1.0" text="Book2">
+                                       <font>
+                                          <Font name="Segoe UI" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="148.0" prefWidth="131.0" style="-fx-border-color: green;">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="5.0" prefHeight="51.0" prefWidth="114.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.77783203125" minWidth="10.0" prefWidth="66.77783203125" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.88885498046875" minWidth="10.0" prefWidth="47.22216796875" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="39.444427490234375" minHeight="10.0" prefHeight="31.000030517578125" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="37.666636149088546" minHeight="10.0" prefHeight="37.666636149088546" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Avail" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Price">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="867" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="62" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Spinner editable="true" layoutX="14.0" layoutY="60.0" prefHeight="31.0" prefWidth="99.0" />
+                                          <Button layoutX="17.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" text="Add to cart">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="167.0" prefWidth="325.0" style="-fx-border-color: blue;">
+                           <children>
+                              <ImageView fitHeight="169.0" fitWidth="152.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/249774684_315673686686307_4498521364674235277_n.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="-1.0" text="CD2">
+                                       <font>
+                                          <Font name="Segoe UI" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="148.0" prefWidth="131.0" style="-fx-border-color: green;">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="5.0" prefHeight="51.0" prefWidth="114.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.77783203125" minWidth="10.0" prefWidth="66.77783203125" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.88885498046875" minWidth="10.0" prefWidth="47.22216796875" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="39.444427490234375" minHeight="10.0" prefHeight="31.000030517578125" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="37.666636149088546" minHeight="10.0" prefHeight="37.666636149088546" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Avail" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Price">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="228" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="53" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Spinner editable="true" layoutX="14.0" layoutY="60.0" prefHeight="31.0" prefWidth="99.0" />
+                                          <Button layoutX="17.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" text="Add to cart">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="197.0" prefWidth="325.0" style="-fx-border-color: blue;">
+                           <children>
+                              <ImageView fitHeight="197.0" fitWidth="160.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/253122986_419093852937061_6948574089729276312_n.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="-1.0" text="DVD2">
+                                       <font>
+                                          <Font name="Segoe UI" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="148.0" prefWidth="131.0" style="-fx-border-color: green;">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="5.0" prefHeight="51.0" prefWidth="114.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.77783203125" minWidth="10.0" prefWidth="66.77783203125" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.88885498046875" minWidth="10.0" prefWidth="47.22216796875" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="39.444427490234375" minHeight="10.0" prefHeight="31.000030517578125" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="37.666636149088546" minHeight="10.0" prefHeight="37.666636149088546" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Avail" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Price">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="127" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="3" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Spinner editable="true" layoutX="14.0" layoutY="60.0" prefHeight="31.0" prefWidth="99.0" />
+                                          <Button layoutX="17.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" text="Add to cart">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: pink;" GridPane.columnIndex="2">
+                     <children>
+                        <HBox prefHeight="190.0" prefWidth="325.0" style="-fx-border-color: blue;">
+                           <children>
+                              <ImageView fitHeight="161.0" fitWidth="162.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/248671495_315346063358944_7895732796449674514_n.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="-1.0" text="Book3">
+                                       <font>
+                                          <Font name="Segoe UI" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="148.0" prefWidth="131.0" style="-fx-border-color: green;">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="5.0" prefHeight="51.0" prefWidth="114.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.77783203125" minWidth="10.0" prefWidth="66.77783203125" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.88885498046875" minWidth="10.0" prefWidth="47.22216796875" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="39.444427490234375" minHeight="10.0" prefHeight="31.000030517578125" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="37.666636149088546" minHeight="10.0" prefHeight="37.666636149088546" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Avail" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Price">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="461" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="43" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Spinner editable="true" layoutX="14.0" layoutY="60.0" prefHeight="31.0" prefWidth="99.0" />
+                                          <Button layoutX="17.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" text="Add to cart">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="167.0" prefWidth="325.0" style="-fx-border-color: blue;">
+                           <children>
+                              <ImageView fitHeight="169.0" fitWidth="152.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/248795424_859698658056984_5171316904665807901_n.jpg" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="-1.0" text="CD3">
+                                       <font>
+                                          <Font name="Segoe UI" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="148.0" prefWidth="131.0" style="-fx-border-color: green;">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="5.0" prefHeight="51.0" prefWidth="114.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.77783203125" minWidth="10.0" prefWidth="66.77783203125" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.88885498046875" minWidth="10.0" prefWidth="47.22216796875" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="39.444427490234375" minHeight="10.0" prefHeight="31.000030517578125" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="37.666636149088546" minHeight="10.0" prefHeight="37.666636149088546" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Avail" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Price">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="744" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="11" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Spinner editable="true" layoutX="14.0" layoutY="60.0" prefHeight="31.0" prefWidth="99.0" />
+                                          <Button layoutX="17.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" text="Add to cart">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="197.0" prefWidth="325.0" style="-fx-border-color: blue;">
+                           <children>
+                              <ImageView fitHeight="197.0" fitWidth="162.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/249839700_486346935831573_3502333854150406964_n.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="-1.0" text="DVD3">
+                                       <font>
+                                          <Font name="Segoe UI" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="148.0" prefWidth="131.0" style="-fx-border-color: green;">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="5.0" prefHeight="51.0" prefWidth="114.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.77783203125" minWidth="10.0" prefWidth="66.77783203125" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.88885498046875" minWidth="10.0" prefWidth="47.22216796875" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="39.444427490234375" minHeight="10.0" prefHeight="31.000030517578125" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="37.666636149088546" minHeight="10.0" prefHeight="37.666636149088546" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Avail" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Price">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="143" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="61" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Spinner editable="true" layoutX="14.0" layoutY="60.0" prefHeight="31.0" prefWidth="99.0" />
+                                          <Button layoutX="17.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" text="Add to cart">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: pink;" GridPane.columnIndex="3">
+                     <children>
+                        <HBox prefHeight="190.0" prefWidth="325.0" style="-fx-border-color: blue;">
+                           <children>
+                              <ImageView fitHeight="177.0" fitWidth="155.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/249349828_4389293871191559_8720795176064168062_n.jpg" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="-1.0" text="Book4">
+                                       <font>
+                                          <Font name="Segoe UI" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="148.0" prefWidth="131.0" style="-fx-border-color: green;">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="5.0" prefHeight="51.0" prefWidth="114.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.77783203125" minWidth="10.0" prefWidth="66.77783203125" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.88885498046875" minWidth="10.0" prefWidth="47.22216796875" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="39.444427490234375" minHeight="10.0" prefHeight="31.000030517578125" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="37.666636149088546" minHeight="10.0" prefHeight="37.666636149088546" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Avail" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Price">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="575" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="30" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Spinner editable="true" layoutX="14.0" layoutY="60.0" prefHeight="31.0" prefWidth="99.0" />
+                                          <Button layoutX="17.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" text="Add to cart">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="167.0" prefWidth="325.0" style="-fx-border-color: blue;">
+                           <children>
+                              <ImageView fitHeight="169.0" fitWidth="152.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/249774684_315673686686307_4498521364674235277_n.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="-1.0" text="CD4">
+                                       <font>
+                                          <Font name="Segoe UI" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="148.0" prefWidth="131.0" style="-fx-border-color: green;">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="5.0" prefHeight="51.0" prefWidth="114.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.77783203125" minWidth="10.0" prefWidth="66.77783203125" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.88885498046875" minWidth="10.0" prefWidth="47.22216796875" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="39.444427490234375" minHeight="10.0" prefHeight="31.000030517578125" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="37.666636149088546" minHeight="10.0" prefHeight="37.666636149088546" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Avail" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Price">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="315" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="62" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Spinner editable="true" layoutX="14.0" layoutY="60.0" prefHeight="31.0" prefWidth="99.0" />
+                                          <Button layoutX="17.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" text="Add to cart">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="197.0" prefWidth="325.0" style="-fx-border-color: blue;">
+                           <children>
+                              <ImageView fitHeight="197.0" fitWidth="168.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/253122986_419093852937061_6948574089729276312_n.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="-1.0" text="DVD4">
+                                       <font>
+                                          <Font name="Segoe UI" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="148.0" prefWidth="131.0" style="-fx-border-color: green;">
+                                       <children>
+                                          <GridPane layoutX="6.0" layoutY="5.0" prefHeight="51.0" prefWidth="114.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.77783203125" minWidth="10.0" prefWidth="66.77783203125" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.88885498046875" minWidth="10.0" prefWidth="47.22216796875" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="39.444427490234375" minHeight="10.0" prefHeight="31.000030517578125" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="37.666636149088546" minHeight="10.0" prefHeight="37.666636149088546" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Avail" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Price">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="317" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="90" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <Spinner editable="true" layoutX="14.0" layoutY="60.0" prefHeight="31.0" prefWidth="99.0" />
+                                          <Button layoutX="17.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" text="Add to cart">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
