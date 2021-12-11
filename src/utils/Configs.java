@@ -16,12 +16,12 @@ public class Configs {
 
 	// demo data
 	public static final String POST_DATA = "{"
-			+ " \"secretKey\": \"BUXj/7/gHHI=\" ,"
+			+ " \"secretKey\": \"BA2oNJzIQ2Y=\" ,"
 			+ " \"transaction\": {"
 			+ " \"command\": \"pay\" ,"
-			+ " \"cardCode\": \"118609_group1_2020\" ,"
-			+ " \"owner\": \"Group 1\" ,"
-			+ " \"cvvCode\": \"185\" ,"
+			+ " \"cardCode\": \"kscq1_group2_2020\" ,"
+			+ " \"owner\": \"Group 2\" ,"
+			+ " \"cvvCode\": \"766\" ,"
 			+ " \"dateExpried\": \"1125\" ,"
 			+ " \"transactionContent\": \"Pei debt\" ,"
 			+ " \"amount\": 50000 "
@@ -50,6 +50,7 @@ public class Configs {
 	public static final String HOME_PATH  = "/views/fxml/home.fxml";
 	public static final String HOME_MEDIA_PATH = "/views/fxml/media_home.fxml";
 	public static final String POPUP_PATH = "/views/fxml/popup.fxml";
+	public static final String RUSH_SCREEN_PATH = "/views/fxml/rushorder.fxml";
 
 	public static Font REGULAR_FONT = Font.font("Segoe UI", FontWeight.NORMAL, FontPosture.REGULAR, 24);
 
