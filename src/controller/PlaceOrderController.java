@@ -103,7 +103,7 @@ public class PlaceOrderController extends BaseController{
     
     public boolean validateAddress(String address) {
     	if(address == null) return false;
-    	return address.matches("([A-Za-z0-9'\\.\\-\\s\\,])*{1,200}");
+    	return address.matches("([A-Za-z0-9'\\s])*{1,200}");
     }
     
 
@@ -113,9 +113,6 @@ public class PlaceOrderController extends BaseController{
      * @return shippingFee
      */
     public int calculateShippingFee(Order order){
-        Random rand = new Random();
-        int fees = (int)( ( (rand.nextFloat()*10)/100 ) * order.getAmount() );
-        LOGGER.info("Order Amount: " + order.getAmount() + " -- Shipping Fees: " + fees);
-        return fees;
+    	return new NewShippingFeeCalculate().calculateShippingFee(order);
     }
 }

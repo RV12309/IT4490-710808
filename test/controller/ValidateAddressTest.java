@@ -19,11 +19,11 @@ class ValidateAddressTest {
 	@ParameterizedTest
 	@CsvSource({
 		"Hanoi,true",
-		"984394- hanoi,true",
+		"984394 hanoi,true",
 		"abc1@ 2i323, false",
 		"Bac Kan, true"
 	})
-	
+
 	void test(String address, boolean expected) {
 		boolean isValided = placeOrderController.validateAddress(address);
 		assertEquals(expected, isValided);

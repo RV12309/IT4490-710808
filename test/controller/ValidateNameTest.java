@@ -16,12 +16,13 @@ class ValidateNameTest {
 		placeOrderController = new PlaceOrderController();
 	}
 
-	@ParameterizedTest
+
+@ParameterizedTest
 	@CsvSource({
 		"Yen NH, true",
 		"abc134, false",
 		"abc-dsds, false",
-		"sjdk, true"
+		"YenHoang, true"
 	})
 	
 	void test(String name, boolean expected) {

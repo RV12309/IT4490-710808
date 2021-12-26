@@ -18,8 +18,8 @@ import utils.Utils;
 
 public class InterbankSubsystemController {
 
-	private static final String PUBLIC_KEY = "AQzdE8O/fR8=";
-	private static final String SECRET_KEY = "BUXj/7/gHHI=";
+	private static final String PUBLIC_KEY = "CqMpVNeFDw0=";
+	private static final String SECRET_KEY = "BA2oNJzIQ2Y=";
 	private static final String PAY_COMMAND = "pay";
 	private static final String VERSION = "1.0.0";
 
